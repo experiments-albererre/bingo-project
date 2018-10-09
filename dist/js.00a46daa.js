@@ -19273,7 +19273,7 @@ var randomNumber = function randomNumber() {
   //check if this is the first time you push button
   started == false ? startGame() : true;
   var number = Math.round(Math.random() * 5 + 1);
-  dice.innerHTML = number;
+  dice.innerHTML = number; // and then cross the number in cards
 };
 
 var startGame = function startGame() {

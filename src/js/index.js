@@ -19,6 +19,9 @@ let randomNumber = () => {
 
   let number = Math.round( (Math.random() * 5 ) + 1);
   dice.innerHTML = number;
+
+      // and then cross the number in cards
+
 }
 
 let startGame = () => {
@@ -27,14 +30,13 @@ let startGame = () => {
     generateCards(machineNumbers);
     human.innerHTML = showNumbers(humanNumbers);
     machine.innerHTML = showNumbers(machineNumbers);
-
 }
 
 let showNumbers = (_array) => {
     let _output;
 
         for(let i = 0; i < _array.length ; i++) {
-            
+
         }
 
     return _output;

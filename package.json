@@ -19,6 +19,7 @@
     "postcss-preset-env": "^6.0.7"
   },
   "dependencies": {
+    "lodash": "^4.17.11",
     "snarkdown": "^1.2.2"
   }
 }

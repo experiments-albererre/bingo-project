@@ -19280,8 +19280,16 @@ var startGame = function startGame() {
   started = true;
   generateCards(humanNumbers);
   generateCards(machineNumbers);
-  human.innerHTML = humanNumbers;
-  machine.innerHTML = machineNumbers;
+  human.innerHTML = showNumbers(humanNumbers);
+  machine.innerHTML = showNumbers(machineNumbers);
+};
+
+var showNumbers = function showNumbers(_array) {
+  var _output;
+
+  for (var i = 0; i < _array.length; i++) {}
+
+  return _output;
 };
 
 var generateCards = function generateCards(_array) {

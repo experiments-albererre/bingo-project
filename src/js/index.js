@@ -25,8 +25,19 @@ let startGame = () => {
     started = true;
     generateCards(humanNumbers);
     generateCards(machineNumbers);
-    human.innerHTML = humanNumbers;
-    machine.innerHTML = machineNumbers;
+    human.innerHTML = showNumbers(humanNumbers);
+    machine.innerHTML = showNumbers(machineNumbers);
+
+}
+
+let showNumbers = (_array) => {
+    let _output;
+
+        for(let i = 0; i < _array.length ; i++) {
+            
+        }
+
+    return _output;
 }
 
 let generateCards = (_array) => {

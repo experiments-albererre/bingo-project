@@ -1,3 +1,6 @@
+body {
+    font-family: "Indie Flower";
+}
 .mainContainer {
     background: white;
     display: flex;
@@ -22,23 +25,23 @@
 }
 
 .playerContainer {
-    background: green;
+    background-image: linear-gradient(135deg, #ff00ba 0%, #fae713 100%);
 }
 
 .cpuContainer {
-    background: red;  
+    background-image: linear-gradient(135deg, #00c3ff, #ffff1c);
 }
 
 .carton {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     flex-direction: row;
     width: 30vw;
     height: 400px;
-    border: solid 3px #aaa;
-    border-radius: 7px;
+    border: solid 3px white;
+    border-radius: 50px;
     margin: 50px;
     padding: 25px;
 }
@@ -47,12 +50,11 @@
     background: white;
     display: inline-block;
     justify-content: center;
-    align-items: center;
     border: solid 2px white;
     border-radius: 10px;
-    font-size: 3em;
+    font-size: 3.5em;
     margin: 5px;
-    padding: 5px;
+    padding: 8px;
 }
 
 .tachado {    
@@ -92,9 +94,9 @@
     font-size: 20px;
     animation: boing 300ms ease-in-out;
 
-    &.blue {
-        background-color: #4a79f1;
-        border: 1px solid darken(#4a79f1, 15%);
+    &.bColor {
+        background-image: linear-gradient(150deg, #5a00ff 0%, #ff1ff7 100%, #ff1ff7 100%);
+        border: solid 3px white;
       }
 }
 

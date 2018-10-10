@@ -8,6 +8,12 @@ VanillaTilt.init(document.querySelector(".playerContainer"), {
     scale: 1.08,
 });
 
+VanillaTilt.init(document.querySelector(".cpuContainer"), {
+    max: 25,
+    speed: 400,
+    scale: 1.08,
+});
+
 // DOM elements
 const dice = document.getElementById("dice");
 const button = document.getElementById("button");

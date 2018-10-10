@@ -1,5 +1,12 @@
 // Lowdash library
 const _ = require('lodash');
+const vanillaTilt = require('vanilla-tilt');
+
+VanillaTilt.init(document.querySelector(".playerContainer"), {
+    max: 25,
+    speed: 400,
+    scale: 1.08,
+});
 
 // DOM elements
 const dice = document.getElementById("dice");
@@ -17,29 +24,38 @@ let randomNumber = () => {
   //check if this is the first time you push button
   (started == false ? startGame() : true );
 
-  let number = Math.round( (Math.random() * 5 ) + 1);
+  let number = Math.round( (Math.random() * 89 ) + 1);
   dice.innerHTML = number;
 
-      // and then cross the number in cards
+  // cross the number in cards
+  crossNumber(number);
+}
 
+let crossNumber = (_number) => {
+
+    console.log(_number);
+
+    let num = document.querySelector(`.number.n${_number}`);
+    num.classList.add("tachado");
 }
 
 let startGame = () => {
     started = true;
     generateCards(humanNumbers);
     generateCards(machineNumbers);
-    human.innerHTML = showNumbers(humanNumbers);
-    machine.innerHTML = showNumbers(machineNumbers);
+    showNumbers(humanNumbers, human);
+    showNumbers(machineNumbers, machine);
 }
 
-let showNumbers = (_array) => {
-    let _output;
+let showNumbers = (_array, _domElement) => {
 
-        for(let i = 0; i < _array.length ; i++) {
-
-        }
-
-    return _output;
+    _array.forEach((e) => {
+        
+        let div = document.createElement("div");
+        div.className = `number n${e}`;
+        div.textContent = e;
+        _domElement.appendChild(div);
+    });
 }
 
 let generateCards = (_array) => {

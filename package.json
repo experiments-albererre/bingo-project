@@ -21,6 +21,7 @@
   "dependencies": {
     "lodash": "^4.17.11",
     "snarkdown": "^1.2.2",
+    "sweetalert2": "^7.28.4",
     "vanilla-tilt": "^1.4.1"
   }
 }

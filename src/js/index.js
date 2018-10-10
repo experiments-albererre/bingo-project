@@ -36,7 +36,7 @@ let finishGame = (_msg) => {
     let bol = swal({
         title: _msg,
         text: 'Do you want to play again?',
-        type: 'error',
+        type: 'warning',
         confirmButtonText: 'Yeah'
       }).then((result) => {
         if (result.value) {
